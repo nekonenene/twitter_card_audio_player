@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Twitter Player Card Test</title>
     <meta name="description" content="Twitter Card でオーディオも埋め込めるっぽい？ ので試す">
     <link rel="icon" href="./favicon.png" sizes="192x192">
@@ -13,11 +14,24 @@
     <meta name="twitter:player" content="./frame.html">
     <meta name="twitter:player:width" content="480">
     <meta name="twitter:player:height" content="360">
+    <style type="text/css">
+      body {
+        margin: 0;
+        padding: 1rem 2rem;
+        font-size: 18px;
+        font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "Helvetica Neue", Helvetica, Arial, Roboto, "Droid Sans", "游ゴシック", YuGothic, sans-serif;
+      }
+    </style>
   </head>
 
   <body>
-    <p>Twitter Card で audio 再生ができるのかのテスト</p>
-    <p>ドキュメント: <a href="https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/player-card">https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/player-card</a></p>
-    <p>参考: <a href="https://github.com/twitterdev/cards-player-samples">https://github.com/twitterdev/cards-player-samples</a></p>
+    <div style="margin-bottom: 4rem">
+      <h2>Twitter Card で audio 再生ができるのかのテスト</h2>
+      <p>ドキュメント: <a href="https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/player-card">https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/player-card</a></p>
+      <p>参考: <a href="https://github.com/twitterdev/cards-player-samples">https://github.com/twitterdev/cards-player-samples</a></p>
+    </div>
+    <div style="text-align: center">
+      <iframe src="./frame.html" width="480px" height="360px"></iframe>
+    </div>
   </body>
 </html>
